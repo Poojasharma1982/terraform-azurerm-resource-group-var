@@ -10,7 +10,7 @@ resource "azurerm_resource_group" "rg-module" {
 }
 resource "azurerm_resource_group" "rg-module-location" {
   name     = var.rg-name
-  location = var.rg-location
+  location = "centralus"
   tags = {
       Environment = "Test"
       Service     = "Example"
